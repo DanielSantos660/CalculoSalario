@@ -17,6 +17,25 @@ namespace CalculoSalario
             InitializeComponent();
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double hora, vh, pdesc, salB, salL, tdesc;
+            hora = double.Parse(textBox1.Text);
+            vh = double.Parse(textBox2.Text);
+            pdesc = double.Parse(textBox3.Text);
+
+            salB = hora * vh;
+            tdesc = (pdesc / 100) * salB;
+
+            salL = salB - tdesc;
+
+            salB = Math.Round(salB, 2);
+            tdesc = Math.Round(tdesc, 2);
+            salL = Math.Round(salL, 2);
+
+            label6.Text = "R$" + salB.ToString();
+            label7.Text = "R$" + salL.ToString();
+            label9.Text = "R$" + tdesc.ToString();
+        }
     }
 }
