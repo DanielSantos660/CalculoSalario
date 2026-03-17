@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,6 +46,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -135,21 +138,29 @@
             // 
             // button2
             // 
+            this.button2.ImageKey = "84_Sem_Titulo_20260317181800.png";
+            this.button2.ImageList = this.imageList1;
             this.button2.Location = new System.Drawing.Point(888, 615);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(67, 67);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Sair";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LemonChiffon;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ImageKey = "84_Sem_Titulo_20260317181603.png";
+            this.button3.ImageList = this.imageList1;
             this.button3.Location = new System.Drawing.Point(56, 615);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(67, 67);
             this.button3.TabIndex = 10;
-            this.button3.Text = "Limpar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // label6
             // 
@@ -197,6 +208,13 @@
             this.label10.Size = new System.Drawing.Size(161, 35);
             this.label10.TabIndex = 14;
             this.label10.Text = "Descontos:";
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "84_Sem_Titulo_20260317181800.png");
+            this.imageList1.Images.SetKeyName(1, "84_Sem_Titulo_20260317181603.png");
             // 
             // Form1
             // 
@@ -248,6 +266,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 
