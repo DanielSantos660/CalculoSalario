@@ -37,5 +37,23 @@ namespace CalculoSalario
             label7.Text = "R$" + salL.ToString();
             label9.Text = "R$" + tdesc.ToString();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+
+            label6.Text = "";
+            label7.Text = "";
+            label9.Text = "";
+
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
